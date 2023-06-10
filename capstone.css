@@ -1,0 +1,92 @@
+body 
+{
+    font-family: 'Zen Dots', cursive;
+    background-color: whitesmoke;
+    color: black;
+}
+
+/* mouse over link*/
+.nav-item:hover {
+    background-color: darkred;
+}
+
+/* Browse page tab colors*/
+#artist-tab, #album-tab, #genre-tab {
+    color: black;
+}
+
+/* Browse - Genre tabs color */
+#v-pills-pop-tab, #v-pills-country-tab, #v-pills-dance-tab, #v-pills-latin-tab, #v-pills-hiphop-tab, #v-pills-rock-tab, #v-pills-other-tab {
+    color: black;
+}
+
+/* Browse - Genre tab hover color */
+#v-pills-pop-tab:hover, #v-pills-country-tab:hover, #v-pills-dance-tab:hover, #v-pills-latin-tab:hover, #v-pills-hiphop-tab:hover, #v-pills-rock-tab:hover, #v-pills-other-tab:hover {
+    background-color: darkred;
+}
+
+/* Browse - Genre active tab color */
+#v-pills-pop-tab.active, #v-pills-country-tab.active, #v-pills-dance-tab.active, #v-pills-latin-tab.active, #v-pills-hiphop-tab.active, #v-pills-rock-tab.active, #v-pills-other-tab.active {
+    background-color: darkred;
+}
+
+/* Photo carousels - browsealbum and browseartist */
+.carousel {
+    height: 50%;
+    width: 50%;
+}
+
+/* Search bars - homepage */
+.p-3{
+    text-align: center;
+}
+
+/* Search bar button */
+.btn-outline-success {
+    color: darkred;
+    border-color: darkred;
+}
+
+#v-pills-tab {
+    color: red;
+}
+
+.image {
+    width: 100%;
+    height: 50%;
+}
+
+#paraabout, #paracontact, #parabrowsegenre, #parabrowseartist, #parabrowsealbum, #paraalbumbrowse, #paraartistbrowse, #paragenrebrowse, .col-sm-6
+{
+    /*(font-family: 'Times New Roman', Times, serif;*/
+    font-size: 23px;
+}
+
+/* Media queries - responsive web pages */
+@media only screen and (max-width: 1024px) {
+    body {margin: 0;}
+    #wrapper {width: auto;}
+    main {margin-left: 10px;
+        margin-right: 0;}
+    header {height: auto; line-height: auto;}
+    header-img {float: none;}
+    main img {float: none;}
+    nav {width: auto; height: auto;}
+    nav li {float: none;
+            display: inline-block;
+            padding: 0.5em; }
+    nav ul {text-align: center;}
+    nav a {border-style: none;}
+    h1, h2 {font-size: 120%;}
+    p {font-size: 90%; }
+    }
+
+@media only screen and (max-width: 768px) {
+    main {margin-left: 10px; margin-right: 10px; margin-bottom: 10px;}
+    h1, h2 { font-size: 120%; }
+    p { font-size: 90%; }
+    img { display: none; float: none;}
+    nav, nav ul, nav li {padding: 0;}
+    nav li {display: block;}
+    nav a {display: block; padding: 0.3em; border-bottom: 2px ridge black;}
+}
